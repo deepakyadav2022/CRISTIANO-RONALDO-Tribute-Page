@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.con {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    background-image: radial-gradient(at 50% 80%, rgba(109, 0, 0, 0), rgba(129, 0, 0, 0.507), rgb(126, 0, 0));
+    width: auto;
+    height: 130px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    top: 0;
+    margin: -65px 10px 5px 10px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    animation: rotate 1s;
+}
+
+@keyframes rotate {
+    from {
+        opacity: 0;
+        margin-top: -100px;
+            transform: rotate(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+        transform: rotate(0deg);
+    }
+}
+
+.navbar ul li a {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 2px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'baloo bhai 2';
+    text-shadow: 1px 1px 5px rgb(94, 94, 94);
+}
+
+.navbar ul li a:hover {
+    color: black;
+    text-shadow: 5px 5px 50px black;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%{
+        box-shadow: none;
+        margin-top: 0px;
+    }
+    25%{
+        box-shadow: 5px 5px 50px white;
+        margin-top: -5px;
+    }
+    50%{
+        box-shadow: none;
+        margin-top: 0px;
+    }
+    75%{
+        box-shadow: 5px 5px 50px white;
+        margin-top: -5px;
+    }
+    100%{
+        box-shadow: none;
+        margin-top: 0px;
+    }
+}
+
+.item4 {
+    margin: 0px 0px 0px 580px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    animation: move 2s;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        margin-top: -100px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.profile_picture {
+    margin: -60px auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 30px #000000;
+}
+
+.profile h1 {
+    margin: 70px auto 0px;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 30px black;
+}
+
+.profile p {
+    margin-top: 5px;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 15px black;
+}
+
+/*Global*/
+.content-right {
+    padding-left: 10px;
+}
+
+/*Global*/
+h1 {
+    margin: 10px 5px;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+/*Global*/
+p {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.content-right h1,
+.content-right p {
+    background-image: linear-gradient(to right, rgba(21, 167, 159, 0), rgb(0, 0, 0));
+}
+
+.content-left h1,
+.content-left p {
+    background-image: linear-gradient(to left, rgba(21, 167, 159, 0), rgb(0, 0, 0));
+}
+
+#about-section {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+    animation: move1 2s;
+}
+
+@keyframes move1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.Templet-image1 {
+    margin: 10px;
+    padding: 5px;
+    width: 250px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.Templet-image2 {
+    margin: 10px;
+    padding: 25px;
+    width: 380px;
+    -webkit-filter: drop-shadow(-5px -5px 5px black);
+    filter: drop-shadow(-5px -5px 5px black);
+}
+
+#early_life-section {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+}
+
+.Templet-image3 {
+    margin: 10px;
+    padding: 5px;
+    width: 380px;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+#club_Career-section {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+}
+
+
+.Templet-image4 {
+    margin: 10px;
+    padding: 5px;
+    width: 500px;
+    -webkit-filter: drop-shadow(-5px -5px 5px black);
+    filter: drop-shadow(-5px -5px 5px black);
+}
+
+#playing_style-section {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 0, 0, 0));
+}
+
+/*.Templet-image5{
+    margin: 10px;
+    padding: 25px;
+    width: 380px;
+    -webkit-filter: drop-shadow(5px 5px 5px black);
+    filter: drop-shadow(5px 5px 5px black);
+} */
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    font-weight: 1.2rem;
+    text-align: center;
+}
